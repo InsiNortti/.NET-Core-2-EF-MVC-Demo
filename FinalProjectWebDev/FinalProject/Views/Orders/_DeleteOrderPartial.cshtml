@@ -1,0 +1,86 @@
+﻿@model Order
+
+@if (Model != null)
+{
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Poistetaanko tilaus?</h4>
+    </div>
+    <div class="modal-body">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.State)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.State)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.OrderDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.StartDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.FinishDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.FinishDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.AcceptDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.AcceptDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CancelDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CancelDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Comment)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Comment)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.HourCount)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.HourCount)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Cost)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Cost)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.UsedAccessories)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.UsedAccessories)
+            </dd>
+        </dl>
+    </div>
+    <div class="modal-footer">
+        <form id="deleteOrderForm" asp-controller="Orders" asp-action="Delete">
+            <input type="hidden" asp-for="ID" />
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Sulje</button>
+            <input type="submit" class="btn btn-default btn-sm" value="Poista" />
+        </form>
+    </div>
+}

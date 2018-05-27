@@ -1,0 +1,76 @@
+﻿@model FinalProject.Models.Customer
+
+@{
+    ViewData["Title"] = "Etusivu";
+}
+
+<div class="container homeContainer">
+    @if (ViewData["UserID"] == null)
+    {
+        <div class="row">
+            <h2>Etkö ole vielä asiakkaamme?</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <p class="lead">Liity joukkoon iloiseen, ja saat ensimmäisestä työtilauksesta -50% alennusta! Vaihdamme lamput, asennamme tiskikoneet ja paljon muuta..</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-lg btn-block createButton" data-url=@Url.Action("Create", "Customers")>LIITY!</button>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <h2>Hei @ViewData["UserName"]!</h2>
+        </div>
+        @if (ViewData["HasApartment"].ToString().Equals("false"))
+        {
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="lead">Ennen työtilauksen tekemistä, pyydämme sinua viimeistelemään tilisi lisäämällä asumistietosi.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary btn-lg btn-block createButton" data-url=@Url.Action("Create", "Apartments")>Lisää asunnon tiedot</button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="lead">Toimitusjohtajan lottovoiton kunniaksi remonttikartoitus meiltä ilmaiseksi juhannukseen asti!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary btn-lg btn-block createButton" data-url=@Url.Action("Create", "Orders")>Tee tilaus</button>
+                </div>
+            </div>
+        }
+    }
+    <br /><br /><br />
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p class="lead">Tilaa uutiskirje, niin täytämme sähköpostisi roskapostilla!</p>
+            <div class="input-group input-group-lg">
+                <input type="email" class="form-control input-lg" placeholder="Sähköpostiosoite">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary btn-lg" type="button">Tilaa uutiskirje</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,11 @@
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\bin\Debug\netcoreapp2.0\FinalProject.deps.json
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\bin\Debug\netcoreapp2.0\FinalProject.runtimeconfig.json
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\bin\Debug\netcoreapp2.0\FinalProject.runtimeconfig.dev.json
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\bin\Debug\netcoreapp2.0\FinalProject.dll
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\bin\Debug\netcoreapp2.0\FinalProject.pdb
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\obj\Debug\netcoreapp2.0\FinalProject.csprojResolveAssemblyReference.cache
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\obj\Debug\netcoreapp2.0\FinalProject.csproj.CoreCompileInputs.cache
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\obj\Debug\netcoreapp2.0\FinalProject.AssemblyInfoInputs.cache
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\obj\Debug\netcoreapp2.0\FinalProject.AssemblyInfo.cs
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\obj\Debug\netcoreapp2.0\FinalProject.dll
+C:\AMK\ETP4220WebSovelluskehitys\FinalProject\FinalProject\FinalProject\obj\Debug\netcoreapp2.0\FinalProject.pdb
